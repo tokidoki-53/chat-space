@@ -15,3 +15,6 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# ChatSpaceは画像の投稿を行なう機能が備わっていますが、投稿された画像自体はソースコードには関係のないものです。
+public/uploads
