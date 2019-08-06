@@ -1,0 +1,10 @@
+.form
+  %form#new_message.new_message{"accept-charset": "UTF-8", action: "/groups/2819/messages", enctype: "multipart/form-data", method: "post"}
+    %input{name: "utf8", type: "hidden", value: "✓"}/
+    %input{name: "authenticity_token", type: "hidden", value: "28CH1QADOuWFxZ9r+C0fyvZPW83PvUofySbwYmrpyoVSEinGU5QdEeCRBOH/SgwQUaVlWdVFk1hCW+byIY7QBw=="}/
+    .input-box
+      %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
+      %label.input-box__image{for: "message_image"}
+        %i.fa.fa-image
+        %input#message_image.input-box__image__file{name: "message[image]", type: "file"}/
+    %input.submit-btn{"data-disable-with": "Send", name: "commit", type: "submit", value: "Send"}/
