@@ -1,0 +1,27 @@
+.flash-box
+.wrapper
+  .chat-side
+    .side-header
+      .side-header__box
+        %p.side-header__box__user-name tokidoki-53.1
+        %ul.side-header__box__menu
+          %li.side-header__box__menu__new-group
+            = link_to "/groups/new" do
+              %i.fa.fa-edit
+          %li.side-header__box__menu__edit-user
+            = link_to "/users/1284/edit" do
+              %i.fa.fa-cog
+    = render partial: "groups"
+  .chat-main
+    .main-header
+      .main-header__left-box
+        %h2.main-header__left-box__current-group{"data-group_id": "2819"}
+          test03
+        %ul.main-header__left-box__member-list
+          Member：
+          %li.main-header__left-box__member-list__member tokidoki-53.1
+      = link_to "/groups/2819/edit" do
+        .main-header__edit-btn Edit
+    .messages
+      = render partial: "message"
+    = render partial: "form"
