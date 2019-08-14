@@ -1,63 +1,5 @@
-.flash-box {
-  color: white;
-  font-size: 1rem;
-  font-weight: lighter;
-  text-align: center;
-  width: 100vw;
-  .notice {
-    background-color: $chatmain-submitbtn;
-  }
-  .alert {
-    background-color: #F35500;
-  }
-}
-
 *::-webkit-scrollbar {
   display: none;
-}
-
-.chat-side {
-  width: 300px;
-  color: $chatside-color;
-  float: left;
-  a {
-    color:$chatside-color;
-  }
-  .side-header {
-    background-color: $chatside-sideheader-background;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    &__box {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      font-weight: bold;
-      &__menu {
-        display: flex;
-        li {
-          margin-left: 0.3rem;
-        }
-      }
-    }
-  }
-  .groups {
-    height: calc(100vh - 100px);
-    background-color: $chatside-groups-background;
-    padding: 20px 20px 0;
-    overflow: scroll;
-    .group {
-      margin-bottom: 40px;
-      &__group-name {
-        font-size: 15px;
-        margin-bottom: 5px;
-      }
-      &__latest-message {
-        font-size: 11px;
-      }
-    }    
-  }
 }
 
 .chat-main {
@@ -123,49 +65,50 @@
           margin-left: 10px;
         }
       }
-      &__text {
-        color: $chatmain-03;
-        font-size: 14px;
-        margin-bottom: 10px;
+      .lower-message {
+        margin-top: 10px;
+        &__content {
+          color: $chatmain-03;
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
       }
     }
   }
   .form {
+    background-color: #DDDDDD;
+    box-sizing: border-box;
     height: 90px;
-    padding: 20px 40px;
-    background-color: #ddd;
-    form {
-      display: flex;
-      .input-box {
-        position: relative;
-        width: 100%;
-        &__text {
-          height: 50px;
-          width: 100%;
-          padding: 0 40px 0 10px;
-          color: $chatmain-03;
-          border-style: none;
-        }
-        &__image {
-          font-size: 1.3rem;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
-          &__file {
-            display: none;
-          }
-        }
+    padding: 20px 50px 20px 40px;
+    &__message {
+      border: none;
+      float: left;
+      height: 50px;
+      width: calc(100% - 150px);
+      padding-left: 10px;
+    }
+    &__mask {
+      background-color: $white;
+      float: left;
+      height: 50px;
+      padding-right: 10px;
+      &__image {
+        font-size: 20px;
+        line-height: 50px;
       }
-      .submit-btn {
-        width: 100px;
-        height: 50px;
-        padding: 0 30px;
-        margin-left: 15px;
-        background-color: $chatmain-submitbtn;
-        color: white;
-        cursor: pointer;
+      .hidden {
+        display: none;
       }
+    }
+    &__submit {
+      background-color: $light_blue;
+      border: none;
+      color: $white;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+      padding: 0 30px;
     }
   }
 }
