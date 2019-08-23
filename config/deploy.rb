@@ -17,7 +17,7 @@ set :rbenv_ruby, '2.5.1' #カリキュラム通りに進めた場合、2.5.1か2
 
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['AAAAB3NzaC1yc2EAAAADAQABAAACAQC6tqfUGQLyZ+FzimMK/JsjbL0qUZ8NghJyNISQUhSE+gr+nYnYMYu38f6Ntv9abB8lwL/dwId4rA7zHoerMmCLaBpL48CCgs9Qrvawksrk61LljrDCZeVBtiNA70M7kdYd8D9aWNzpapORjmwnTF4aM5j7JTYZlGXlvC+/yf4IbpSjr9Qw3lDuk7wIhb1dNURbUzFsvzSy+EUTTO4XQF/bVeCVeK0TNR1+JmOCphmr4vVPiyUwtCq5DoWT3EoNjKkuKz3xgA0dnWW2R2u4JIZ7Qlh7U3Dh5zEAAFj8U/GG0PGamieDvlvHD0GP/4HV1MdsGg2Wa3Q5abj7wY/XKYssZHpJq32fTACVZnZP5PnpyQlbOusjP2Ouia6UWRdEoRAWhQFHmbmsX+E+OjQy1ZhBxcGlIE7OnhL4JU5lX7D8y/s0D5Z+QLN3QuK2lEzG9fUnJHoS4kFn6lurV7ost/mGSrPiftmOuNseF0eSiiGaIZ4NOc6ImojBxc8lRaJstx3TYgZhyL1vqg75zhUiaL9WhqdLcmyPqL7fG2vkjvmX+8B5IM582Ir1sTb6IHT7xbHtts2anjCAKJEA9aKPzrcCabl8vg+wl9SzFjrYtKpupp1xMsocCQDEus2a7BXy3nSn8FqdkozzjjK21XHH0s2XH1rt519IgalEhPWEAFc88w']
+                  keys: ['ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDRohfToSaJ8yQOMe7d3EsNKe7UHvCSdqnNUtYfrEdTrcty/3accgWWsFktS8ip52cBRFiFPNLhmy4yhEI27b4XYw0aVGMB07qDu+wQ3mpakZzYnx1PUBCu/tKn63oZdW8H9NY9t/RaKmo9KypMoZzYfCSRLMsrpkvcQs0E8vW9hqqIa4fz698PhVALiX+AgoITbuOHLoKIwBwBeBUORtmwwimHd8J6rF0CC4+OxArLh5gmlbVBO8o4n/gmtTZsMhxDqKrpjoRpnQlBVHLv7y6QOj2PzVM1yoXkT/XK17/huPl2BNkTRRp1nxetmlNEQLBtac4eokGdzN19fDw0WC1Jh6HlsnmRK++DNrRTlyCXdxVOxEmF+poRnsaLVmGf5i7fpSxOMJwPzpxWdTpjcn389eIGaasxrNes9UNRAOqpC4Yl3srAEyVLPHl9uBewRE3L9JLLHbS4AeAYbozdZoqSFk3GdVERA8MkkxB3NtY3RT3oVuItr72XjnkvSaV5AzXuqH6Ck3qTw4ZEsJ6GdrAZ/qfK+VUyW+dAqYEi/6elzG+X5TCd/6dvOLVcOaVWigYvgG6KBStPt7Y4NtAUg4wwz7ePUnm/0lJCoGURiNInKqK34WhfhX15b+I4XdheJEMbWCoJ2OpkjO5lnxiIz74tLAOagho3a8iekA69fHLFlQ== ec2-user@ip-172-31-45-238']
                   # ※例：~/.ssh/key_pem.pem
 
 # プロセス番号を記載したファイルの場所
