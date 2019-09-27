@@ -13,6 +13,6 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory  = 'tokidoki-test'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/tokidoki-test'
+  config.fog_directory  = 'tokidoki-53'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/tokidoki-53'
 end
